@@ -1,0 +1,14 @@
+<%= form_for :pirate, method: meth, url: {action: act} do |f| %>
+  <%= label(:pirate, :name) %><br>
+  <%= f.text_field :name %><br>
+  <%= label(:pirate, :sea) %><br>
+  <%= f.text_field :sea %><br>
+  <%= label(:pirate, :ship_name) %><br>
+  <%= f.text_field :ship_name %><br>
+  <%= label(:pirate, :limbs) %><br>
+  <%= f.text_field :limbs %><br>
+  <%= label(:pirate, :is_left_eye_present) %><br>
+  <%= f.text_field :is_left_eye_present %><br>
+  <br>
+  <%= f.submit "#{act}" %>
+<% end %>

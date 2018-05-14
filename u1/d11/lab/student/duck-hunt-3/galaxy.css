@@ -1,0 +1,35 @@
+body{
+background-color: #111;
+margin-top: 500px;
+}
+
+div{
+position: absolute;
+/*element not dependent on parent for position*/
+top: 50%;
+left: 50%;
+border-radius: 50%;
+}
+
+
+#sun{
+background-color: yellow;
+width: 100px;
+height: 100px;
+box-shadow: 0 0 50px yellow;
+/*inner, horizontal, outer*/
+margin-top: -50px;
+margin-left: -50px;
+}
+#mercury{
+background-color: maroon;
+width: 20px;
+height: 20px;
+margin-top: -75px;
+margin-left: -75px;
+
+}
+
+#venus{
+
+}

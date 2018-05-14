@@ -1,0 +1,33 @@
+<%= link_to 'Create A Pirate', new_pirate_path %>
+
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Sea</th>
+    <th>Ship Name</th>
+    <th>Limbs</th>
+    <th>Left Eye</th>
+  </tr>
+
+
+<% @pirates.each do |pirate| %>
+
+<tr>
+   <td><%= link_to pirate.name, pirate_path(pirate) %></td>
+ <td><p>id: <%= pirate.id %> </p></td>
+ <td><p>id: <%= pirate.sea %> </p></td>
+
+
+
+<% @pirates.each do |pirate|%>
+<td><%= link_to pirate.id %></>
+<% end %>
+
+
+<td><%= link_to 'walk the plank!', pirate_path(pirate),
+              method: :delete,
+              data: { confirm: 'Are you sure, Matey?' } %></td>
+
+<% end %>
+</table>

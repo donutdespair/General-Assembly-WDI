@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline|Lato');
+* {
+  margin: 0;
+  padding: 0;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: "Helvetica", "Arial", sans;
+  background-color: gray;
+}
+
+header{
+background-color: black;
+color: white;
+width: 100%;
+}
+
+header h1{
+font-family: 'Bungee Hairline', cursive;
+text-transform: uppercase;
+font-size: 55px;
+margin: 20px 0;
+}
+
+header h1 span {
+  color: pink;
+}
+
+header .top-nav{
+width: 980px;
+margin:  0 auto;
+background-color: black;
+
+}
+
+header .header-content{
+width: 980px;
+margin:  0 auto;
+background-color: black;
+}
+
+header .bottom-nav{
+width: 100%;
+background-color: teal;
+padding: 10px;
+}
+
+
+header .top-nav ul{
+list-style-type: none;
+padding:  12px 4px;
+}
+header .top-nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+
+}
+header .top-nav ul li a{
+ text-decoration: none;
+color: white;
+font-family: 'Lato', sans-serif;
+font-size: 18px;
+}
+
+header .bottom-nav ul{
+list-style-type: none;
+width: 980px;
+padding: 20px;
+}
+
+header .bottom-nav ul li{
+    display: inline-block;
+    margin-right: 22px;
+}
+header .bottom-nav ul li a{
+ text-decoration: none;
+color: white;
+font-family: 'Lato', sans-serif;
+font-size: 18px;
+}
+.main-container{
+float: left;
+}
+.sidebar{
+float: left;
+}
+

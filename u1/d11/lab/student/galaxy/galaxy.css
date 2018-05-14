@@ -1,0 +1,138 @@
+body{
+background-color: #111;
+margin-top: 500px;
+}
+
+div{
+position: absolute;
+/*element not dependent on parent for position*/
+top: 50%;
+left: 50%;
+border-radius: 50%;
+}
+
+
+#sun{
+background-color: yellow;
+width: 100px;
+height: 100px;
+box-shadow: 0 0 50px yellow;
+/*inner, horizontal, outer*/
+margin-top: -50px;
+margin-left: -50px;
+box-shadow: 0 0 0 0px;
+}
+
+#sun:hover{
+  width: 100%;
+height: 100%;
+margin-top: -170px;
+margin-left: -170px;
+  background: url("explosion.png");
+  background-repeat: no-repeat;
+  border-radius: 0%;
+}
+
+#mercury{
+background-color: maroon;
+width: 20px;
+height: 20px;
+margin-top: -75px;
+margin-left: -75px;
+transform-origin: 75px 75px;
+animation: spin-right 3.4s linear infinite;
+
+}
+
+
+#venus{
+width: 30px;
+height: 30px;
+margin-top: -110px;
+margin-left: -110px;
+background-color: #9999dd;
+transform-origin: 110px 110px;
+animation: spin-right 3.8s linear infinite;
+}
+
+#earth{
+width: 32px;
+height: 32px;
+margin-top: -138px;
+margin-left: -138px;
+background-color: teal;
+transform-origin: 138px 138px;
+animation: spin-right 4s linear infinite;
+}
+#moon{
+  position: relative;
+ width: 12px;
+height: 12px;
+margin-top: -22px;
+margin-left: -22px;
+background-color: gray;
+transform-origin: 22px 22px;
+animation: spin-right 4s linear infinite;
+}
+
+#mars{
+width: 20px;
+height: 20px;
+margin-top: -150px;
+margin-left: -150px;
+background-color: red;
+transform-origin: 150px 150px;
+animation: spin-right 4.2s linear infinite;
+}
+#planetexpress{
+  margin-top: -150px;
+margin-left: -150px;
+transform-origin: 150px 150px;
+animation: spin-right 5.2s linear infinite;
+z-index: 1;
+}
+#jupiter{
+  width: 50px;
+height: 50px;
+margin-top: -180px;
+margin-left: -180px;
+background-color: #cf5300;
+transform-origin: 180px 180px;
+animation: spin-right 4.6s linear infinite;
+}
+#saturn{
+  width: 40px;
+height: 40px;
+margin-top: -210px;
+margin-left: -210px;
+background-color: gray;
+transform-origin: 210px 210px;
+animation: spin-right 5s linear infinite;
+}
+#uranus{
+  width: 32px;
+height: 32px;
+margin-top: -235px;
+margin-left: -235px;
+background-color: #71EEB8;
+transform-origin: 235px 235px;
+animation: spin-right 5.4s linear infinite;
+}
+#neptune{
+  width: 28px;
+height: 28px;
+margin-top: -265px;
+margin-left: -265px;
+background-color: lightskyblue;
+transform-origin: 265px 265px;
+animation: spin-right 5.8s linear infinite;
+}
+
+@keyframes spin-right{
+  100%{
+    transform: rotate(360deg);
+    -webkit-transform:  rotate(360deg);
+    -moz-transform: rotate(360deg) ;
+    -o-transform: rotate(360deg) ;
+  }
+}

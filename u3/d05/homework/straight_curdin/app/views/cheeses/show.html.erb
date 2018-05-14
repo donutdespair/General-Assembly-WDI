@@ -1,0 +1,25 @@
+Name: <%= @cheese['name'] %><br>
+Milk Type: <%=  @cheese['milk_type'] %><br>
+Description: <%= @cheese['description'] %><br>
+Stank Level: <%= @cheese['stank_level'] %><br>
+Image: <img src='<%= @cheese.image_url %>'><br>
+<br>
+<br>
+<a href="/cheeses/<%=@cheese[:id]%>/edit">Edit this cheese</a>
+<br>
+<%= form_for :cheese, method: 'patch', url: {action: "update"} do |f| %>
+<%= label(:cheese, :name) %><br>
+<%= f.text_field :name %><br>
+<%= label(:cheese, :milk_type) %><br>
+<%= f.text_field :milk_type %><br>
+<%= label(:cheese, :description) %><br>
+<%= f.text_field :description %><br>
+<%= label(:cheese, :image_url) %><br>
+<%= f.text_field :image_url %><br>
+<%= label(:cheese, :stank_level) %><br>
+<%= f.text_field :stank_level %><br>
+<br>
+<%= f.submit "Save Edits" %>
+<% end %>
+
+

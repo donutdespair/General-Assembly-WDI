@@ -1,0 +1,42 @@
+body{
+background-color:
+}
+.mainContainer{
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  height: 600px;
+
+}
+.adContainer{
+  position: relative;
+  margin:  0 auto;
+  width: 100%;
+  height: 100%;
+}
+#vacayQ{
+  text-align: center;
+}
+#mainImg{
+  position: relative;
+  margin:  0 auto;
+  width: 70%;
+  height: auto;
+  left: 20%;
+}
+button{
+  position: relative;
+  margin:  0 auto;
+  left: -25%;
+}
+#lunaPark{
+  position: relative;
+  margin:  0 auto;
+  width: 70%;
+  height: auto;
+  left: 15%;
+  top: 5px;
+}
+#lunaParkP{
+  text-align: center;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class = "navContainer">
+<div class="three columns">
+<div class="pageTitle">
+  <h5>Mytko Realty Apartment Directory</h5>
+</div>
+</div>
+<div id="nav" class="nine columns">
+  <ul>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/buildings">Buildings</a></li>
+    <li><a href="/doormen">Doormen</a></li>
+    <li><a href="/apartments">Apartments</a></li>
+    <li><a href="/tenants">Tenants</a></li>
+  </ul>
+</div>
+</div>
+<br><br>
+<div class="container">
+{{#apartments}}
+ <div class = "apartments">
+<div class="one-third column">
+<p><span class ="title">Apartment ID: </span>{{id}}</p>
+<p><span class ="title">Floor Number: </span>{{floor}}</p>
+<p><span class ="title">Apartment Number: </span>{{name}}</p>
+<p><span class ="title">Price: </span>${{price}}</p>
+<p><span class ="title">Square Footage: </span>{{sqft}}sqft</p>
+<p><span class ="title">Bedrooms: </span>{{bedrooms}}</p>
+<p><span class ="title">Bathrooms: </span>{{bathrooms}}</p>
+<p><span class ="title">Building Number: </span>{{building_id}}</p>
+<br><br>
+</div>
+</div>
+{{/apartments}}
+</div>
+</body>
+</html>

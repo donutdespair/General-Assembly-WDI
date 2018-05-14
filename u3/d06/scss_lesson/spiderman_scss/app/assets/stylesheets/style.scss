@@ -1,0 +1,112 @@
+@import "https://fonts.googleapis.com/css?family=Raleway";
+
+body {
+  background-color: #faebd7;
+}
+.text_extend{
+  font-family: Raleway;
+  padding: 20px;
+  text-align: center;
+  color: blue;
+}
+nav {
+  padding: 0;
+  margin: 0;
+ul {
+  display: table;
+  padding: 0;
+  margin: 0 auto;
+li {
+  margin: 0;
+  display: inline;
+  padding: 5px;
+a {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway;
+  color: red;
+}
+a:hover {
+  color: green;
+  cursor: pointer;
+      }
+    }
+  }
+}
+
+#home{
+  h1 {
+  margin: 0 auto;
+  @extend .text_extend;
+  font-size: 70px;
+  }
+  h2 {
+  margin: 0 auto;
+  @extend .text_extend;
+  font-size: 52.5px;
+  }
+}
+#main_image {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+img {
+  margin: 0;
+  padding: 0;
+  max-width: 400px;
+  }
+}
+#about {
+  h2 {
+  margin: 0 auto;
+  @extend .text_extend;
+  font-size: 52.5px;
+  }
+  p {
+  @extend .text_extend;
+  font-size: 17.5px;
+  margin: 0;
+  }
+  ul {
+  margin: 0;
+  padding: 0;
+    li {
+  @extend .text_extend;
+  list-style-type: none;
+  font-size: 17.5px;
+  margin: 0;
+    }
+  }
+}
+#portfolio {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  h2 {
+  margin: 0 auto;
+ @extend .text_extend;
+  font-size: 52.5px;
+  }
+  img {
+  max-width: 300px;
+  margin: 0;
+  padding: 0;
+  }
+}
+#contact {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+h2 {
+  margin: 0 auto;
+  @extend .text_extend;
+  font-size: 52.5px;
+}
+ p {
+  font-family: Raleway;
+  color: blue;
+  font-size: 17.5px;
+  margin: 0;
+  padding: 20px;
+  }
+}

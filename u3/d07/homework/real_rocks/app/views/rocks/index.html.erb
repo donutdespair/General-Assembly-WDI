@@ -1,0 +1,19 @@
+<%= render 'header' %>
+<div class="row">
+<% @rocks.each do |rock| %>
+<div class="col-md-3">
+<div class="bg-primary text-white">
+<br>
+      <img class="small_img" src='<%= rock.image %>'>
+      <div class="card-block">
+        <h4 class="card-title"><%= rock.name %></h4>
+        <p class="card-text"><button type="button" class="btn btn-info"><%= link_to 'View/Edit Rock', rock, method: :get %></button></p>
+      </div>
+      </div>
+    </div>
+<% end %>
+
+</div>
+
+</div>
+

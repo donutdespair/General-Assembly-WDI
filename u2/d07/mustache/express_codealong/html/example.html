@@ -1,0 +1,16 @@
+<p>id: {{id}}</p>
+
+{{#arr}}
+  Blog Article Number: {{.}}
+  <!--{{.}} works similar to map, . is the current element-->
+  <!--mustache not for logic, just template, needs to be predictable-->
+  <br><hr>
+{{/arr}}
+<!--pulls from server.js array object-->
+<hr>
+
+Students are:<br>
+{{#students}}
+  {{name}} scored a {{score}}.<br>
+{{/students}}
+

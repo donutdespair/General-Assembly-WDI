@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Montserrat');
+body{
+  background-color: #DAF4F0;
+  font-family: font-family: 'Montserrat', sans-serif;
+}
+.navContainer {
+  margin-top: 10px;
+  height: 100px;
+  width: 100%;
+  background-color: dimgrey;
+  margin: : 20px;
+}
+
+.pageTitle{
+  font-weight: bold;
+  position: relative;
+  left: 5%;
+  font-family: 'Audiowide', cursive;
+}
+
+#nav {
+  margin: 13px 0 0 0;
+  font-weight: bold;
+}
+
+#nav ul li {
+  display: inline;
+  margin: 0 20px 0 0;
+  margin-bottom: 130px;
+}
+
+#nav a {
+  text-decoration: none;
+}
+
+#nav a:hover {
+  text-decoration: underline;
+}
+
+
+.title{
+  font-weight: bold;
+}
+.mytkoContainer{
+  min-width: 600px;
+}
+.mytko{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+}

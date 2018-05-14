@@ -1,0 +1,15 @@
+{
+  "name": "firstserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+    //will run program if you enter "npm" start in terminal
+    //add nodemon later nodemon app.js
+    //install locally
+  },
+  "author": "",
+  "license": "ISC"
+}

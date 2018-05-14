@@ -1,0 +1,25 @@
+<%= render 'header' %>
+<% @cheeses.each do |cheese| %>
+<h2> <%= cheese.name %></h2>
+<br />
+  <button type="button"><%= link_to 'Eat This Cheese', cheese, method: :delete %></button><br>
+  <%= link_to 'View/Edit Cheese', cheese, method: :get %><br>
+  <hr>
+<% end %>
+
+
+<br>
+<%= form_for :cheese, method: 'post', url: {action: "create"} do |f| %>
+<%= label(:cheese, :name) %><br>
+<%= f.text_field :name %><br>
+<%= label(:cheese, :milk_type) %><br>
+<%= f.text_field :milk_type %><br>
+<%= label(:cheese, :description) %><br>
+<%= f.text_field :description %><br>
+<%= label(:cheese, :image_url) %><br>
+<%= f.text_field :image_url %><br>
+<%= label(:cheese, :stank_level) %><br>
+<%= f.text_field :stank_level %><br>
+<br>
+<%= f.submit "Create Cheese" %>
+<% end %>

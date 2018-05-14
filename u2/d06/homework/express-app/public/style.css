@@ -1,0 +1,68 @@
+button{
+  position: relative;
+  margin: 0 auto;
+  left: 45%;
+}
+.mainContainer{
+  margin: 0 auto;
+  position: relative;
+  width: 800px;
+  height: 600px;
+}
+.packTitle{
+  position: relative;
+  top: 10px;
+  text-align: center;
+}
+.packText{
+  position: relative;
+  top: 10px;
+  text-align: center;
+}
+.packContainer{
+  margin: 0 auto;
+  position: relative;
+  height: 250px;
+  width: 250px;
+  display: inline-block;
+  float: left;
+
+}
+.packImg{
+  margin: 0 auto;
+  position: relative;
+  left: 20%;
+  max-height: 150px;
+  max-width: 150px;
+}
+h5{
+  text-align: center;
+}
+p{
+  text-align: center;
+}
+.mainContainer2{
+  margin: 0 auto;
+  position: relative;
+  width: 800px;
+  height: 700px;
+}
+
+.langContainer{
+  margin: 0 auto;
+  position: relative;
+  height: 250px;
+  width: 250px;
+  display: inline-block;
+  float: left;
+  padding: 5px;
+  margin-bottom: 5px;
+
+}
+.langImg{
+  margin: 0 auto;
+  position: relative;
+  left: 20%;
+  max-height: 150px;
+  max-width: 150px;
+}

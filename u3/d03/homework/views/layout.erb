@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Pick me up</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
+</head>
+<body style = "background-color: <%= @color %>;">
+<div class="container-fluid">
+<div class="main-container">
+  <div class="row">
+    <div class="col-md-12">
+        <h1>
+          Hey <%= @anon %> <%= @name %> <br><small>Feeling down?</small>
+        </h1>
+        <br>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>
+             <%= @compliment %>
+          </h3>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+           <a href="/" class="btn btn-primary" type="button" id="button">I'm still emotionally vacant.<br> Give me another compliment.</a>
+        </div>
+        <div class="col-md-6">
+           <a href="http://ruby-doc.org/" class="btn btn-primary" type="button" id="button">I'm ready to soldier on.<br>To the docs!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<script src="<%= url('/script.js') %>" ></script> -->
+</body>
+</html>

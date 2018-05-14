@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  <div class="container">
+{{#users}}
+ <div class = "users">
+<div class="one-half column">
+<p><span class ="title">User Number: </span><a href="/users/{{id}}" title="">{{id}}</a></p>
+<p><span class ="title">User Name: </span>{{name}}</p>
+<p><span class ="title">User Email Address: </span>{{email}}</p>
+<p><span class ="title">User Password: </span>{{password}}</p>
+<br><br>
+</div>
+</div>
+{{/users}}
+</div>
+
+
+
+</body>
+</html>

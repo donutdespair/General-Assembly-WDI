@@ -1,0 +1,39 @@
+<p>The id is: {{id}}</p>
+
+
+<h3>student name</h3>
+{{#students}}
+    <p>{{name}}</p>
+{{/students}}
+
+<h3>one way</h3>
+
+{{#students}}
+  <p>{{name}}</p>
+{{/students}}
+
+
+<h3>partials</h3>
+
+
+<p>We can use partials to pass in named sub-templates.</p>
+{{#students}}
+
+	{{#happyTone}}
+		{{name}}, who scored, {{score}}
+	{{/happyTone}}
+  {{> foolishPartial}}
+
+{{/students}}
+
+<p>again</p>
+
+{{#students}}
+
+	{{> foolishPartial}}
+  <!-- > this an arrow that points to what you're importing
+  this is how you link another template-->
+
+	<p>this is another 'partial' rendering the current name, which is {{name}}</p>
+
+{{/students}}

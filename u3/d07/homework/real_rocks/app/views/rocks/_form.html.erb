@@ -1,0 +1,12 @@
+<%= form_for :rock, method: method, url: {action: action} do |f| %>
+  <%= label(:rock, :name) %><br>
+  <%= f.text_field :name %><br>
+  <%= label(:rock, :description) %><br>
+  <%= f.text_field :description %><br>
+  <%= label(:rock, :image) %><br>
+  <%= f.text_field :image %><br>
+  <br>
+   <%= f.submit "#{action}".capitalize, :class => "btn btn-info" %>
+<% end %>
+
+

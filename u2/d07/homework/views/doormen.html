@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class = "navContainer">
+<div class="three columns">
+<div class="pageTitle">
+  <h5>Mytko Realty Apartment Directory</h5>
+</div>
+</div>
+<div id="nav" class="nine columns">
+  <ul>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/buildings">Buildings</a></li>
+    <li><a href="/doormen">Doormen</a></li>
+    <li><a href="/apartments">Apartments</a></li>
+    <li><a href="/tenants">Tenants</a></li>
+  </ul>
+</div>
+</div>
+<br><br>
+<div class="container">
+{{#doormen}}
+ <div class = "doormen">
+<div class="one-third column">
+<p><span class ="title">Doorman ID: </span><a href="/doorman/{{id}}" title="">{{id}}</a></p>
+<p><span class ="title">Doorman Name: </span>{{name}}</p>
+<p><span class ="title">Shifts Worked: </span>{{experience}}</p>
+<p><span class ="title">Shift Assigned: </span>{{shift}}</p>
+<p><span class ="title">Building Assigned: </span>{{building_id}}</p>
+<br><br>
+</div>
+</div>
+{{/doormen}}
+</div>
+</body>
+</html>

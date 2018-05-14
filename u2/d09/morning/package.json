@@ -1,0 +1,11 @@
+{
+  "name": "morning",
+  "version": "1.0.0",
+  "description": "![](http://i.giphy.com/HPDPu5CA9DgAM.gif)",
+  "main": "jquery.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

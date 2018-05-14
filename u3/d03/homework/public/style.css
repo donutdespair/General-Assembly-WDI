@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Raleway');
+body{
+  text-align: center;
+  font-family: 'Bungee', cursive;
+  color: white;
+}
+#button{
+  background-color: transparent;
+  font-family: 'Raleway', sans-serif;
+  border: 3px solid white;
+}
+.main-container{
+  position: relative;
+  top: 10em;
+}
